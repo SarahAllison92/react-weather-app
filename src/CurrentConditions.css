@@ -1,0 +1,9 @@
+.CurrentConditions {
+  text-align: center;
+  padding-bottom: 30px;
+  text-shadow: 2px 2px 5px rgb(27, 27, 27, 0.8);
+}
+
+.weather-description {
+  padding-top: 30px;
+}
