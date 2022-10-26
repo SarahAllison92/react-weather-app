@@ -1,4 +1,7 @@
-import logo from "./logo.svg";
+import React from "react";
+import Search from "./Search";
+import Date from "./Date";
+import CurrentConditions from "./CurrentConditions";
 import "./App.css";
 
 function App() {
