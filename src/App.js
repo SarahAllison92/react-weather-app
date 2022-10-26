@@ -1,23 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <body>
+        <div class="container">
+          <div class="weather-app-wrapper">
+            <div class="weather-app">
+              <h1 id="city">
+                <div className="header">Berlin</div>
+              </h1>
+
+              <Date />
+
+              <img
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+                alt="Clear"
+                id="icon"
+                className="current-weather-icon"
+              />
+
+              <div className="temperature">
+                <strong id="temperature">14</strong>°
+                <span className="units">C</span>
+              </div>
+
+              <Search />
+
+              <CurrentConditions />
+
+              <div className="weekly-temp" id="forecast" />
+
+              <footer>
+                <a
+                  href="https://github.com/SarahAllison92/Vanilla-weather-app"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="footer-link"
+                >
+                  Open-source code
+                </a>
+                by Sarah Allison
+              </footer>
+            </div>
+          </div>
+        </div>
+      </body>
     </div>
   );
 }

@@ -1,38 +1,54 @@
-.App {
+.weather-app-wrapper {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  color: #000;
+  font-size: 70px;
+  padding: 30px;
+  line-height: 20px;
+  font-weight: 100;
+  margin: 40px 0 0 10px;
+  text-shadow: 2px 2px 5px rgb(27, 27, 27, 0.8);
+}
+
+.weather-app {
+  border: 1px solid #000;
+  border-radius: 13px;
+  background: -webkit-linear-gradient(70deg, #fed90f 30%, rgba(0, 0, 0, 0) 30%),
+    -webkit-linear-gradient(30deg, #fff 60%, #f2a40d 60%);
+  background: -o-linear-gradient(70deg, #fed90f 30%, rgba(0, 0, 0, 0) 30%),
+    -o-linear-gradient(30deg, #fff 60%, #f2a40d 60%);
+  background: -moz-linear-gradient(70deg, #fed90f 30%, rgba(0, 0, 0, 0) 30%),
+    -moz-linear-gradient(30deg, #fff 60%, #f2a40d 60%);
+  background: linear-gradient(70deg, #fed90f 30%, rgba(0, 0, 0, 0) 30%),
+    linear-gradient(30deg, #fff 60%, #f2a40d 60%);
+}
+
+.current-weather-icon {
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(2px 2px 5px rgb(27, 27, 27, 0.8));
+}
+
+.temperature {
   text-align: center;
+  font-size: 100px;
+  text-shadow: 2px 2px 5px rgb(27, 27, 27, 0.8);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer {
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(27, 27, 24);
+  padding-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  padding-right: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-link:hover {
+  color: #fed90f;
 }
